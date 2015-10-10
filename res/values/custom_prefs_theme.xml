@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="custom_preference_theme"
+        parent="@style/Theme.AppCompat">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+       <!--  <item name="android:listSelector">@drawable/prefs_list_selector</item>
+        <item name="android:cacheColorHint">@color/light_tangerine</item>
+        <item name="android:listViewStyle">@style/listViewPrefs</item> -->
+    </style>
+    <style name="listViewPrefs" parent="@android:style/Widget.ListView">
+	    <item name="android:background">@color/list_normal_background</item>
+	    <item name="android:cacheColorHint">@color/light_tangerine</item>
+	    <item name="android:drawSelectorOnTop">false</item>
+	    <item name="android:listSelector">@drawable/prefs_list_selector</item>
+	</style>
+</resources>

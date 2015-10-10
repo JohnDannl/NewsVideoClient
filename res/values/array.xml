@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_entry">
+        <item >最新</item>
+        <item >最热</item>
+        <item >国际</item>
+        <item >国内</item>
+        <item >社会</item>
+        <item >财经</item>
+        <item >军事</item>
+        <item >科教</item>
+        <item >娱乐</item>
+        <item >体育</item>
+        <item >爱拍</item>
+        <item >其他</item>
+    </string-array>
+    <string-array name="category_value">
+        <item >newest</item>
+        <item >hot</item>
+        <item >world</item>
+        <item >domestic</item>
+        <item >society</item>
+        <item >finance</item>
+        <item >military</item>
+        <item >science</item>
+        <item >entertain</item>
+        <item >sport</item>
+        <item >ipai</item>
+        <item >other</item>
+    </string-array>
+</resources>

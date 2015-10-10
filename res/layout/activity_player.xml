@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+   <FrameLayout 
+        android:id="@+id/surfaceview_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:background="#000000">
+        <ustc.custom.widget.XSurfaceView
+		    android:id="@+id/player_surface"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"		    
+		    android:visibility="gone"/>
+        <LinearLayout
+		    android:id="@+id/player_progressbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:orientation="horizontal" 
+	        android:visibility="gone">
+	        		
+	        <ProgressBar
+	            android:id="@+id/probar"
+	            style="?android:attr/progressBarStyle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	        <!-- style="?android:attr/progressBarStyleLarge" -->
+	 		<TextView
+	            android:id="@+id/load_rate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ffcc33"
+	            android:text="" />
+	        <TextView
+	            android:id="@+id/download_rate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#ffcc33"
+	            android:text="" />       
+	    </LinearLayout> 
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	        
+			android:layout_gravity="top"
+			android:gravity="center"			
+			android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip"
+			android:layout_marginTop="3dip"
+			android:orientation="horizontal">	   
+			<Button 
+			    android:id="@+id/titlebar_return_btn"
+			    android:layout_height="30dip"
+			    android:layout_width="20dip"
+			    android:background="@drawable/titlebar_return_selector"/>             
+	        <TextView 
+	            android:id="@+id/c_textview"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+				android:textSize="14sp"
+				android:textColor="#ffcc33"
+				android:layout_marginLeft="10dip"
+				android:visibility="gone"/>
+	        <TextView android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"/>	        
+	        <DigitalClock 
+	            android:id="@+id/digital_clock"	            
+				android:textColor="#ffcc33"
+				android:textSize="14sp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"/>
+	    </LinearLayout>  	    
+			        
+    </FrameLayout>   
+	<LinearLayout 
+	    android:id="@+id/player_part2"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="4"
+	    android:orientation="vertical">	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:paddingLeft="3dip"
+	        android:textSize="12sp"
+	        android:gravity="center|left"
+	        android:textColor="#ffcc33"
+	        android:text="@string/news_description"/>
+	    <TextView
+	        android:id="@+id/news_brief"
+	        android:gravity="left"
+	        android:maxLines="6"
+	        android:paddingLeft="6dip"
+	        android:paddingRight="6dip"
+	        android:scrollbars="vertical"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="4" />
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:paddingLeft="3dip"
+	        android:textSize="12sp"
+	        android:gravity="center|left"
+	        android:textColor="#ffcc33"
+	        android:text="@string/guess_favourite"/>
+	    <FrameLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="5"
+	        android:layout_margin="6dip">
+	        <ProgressBar
+	            android:id="@+id/related_progress"
+	            style="?android:attr/progressBarStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:visibility="gone" />
+	        <android.support.v4.view.ViewPager
+		        android:id="@+id/related_news"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"/>
+	    </FrameLayout>
+	        	    
+	</LinearLayout>
+</LinearLayout>

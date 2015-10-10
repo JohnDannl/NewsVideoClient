@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_custom">        
+	    <CheckBoxPreference
+	        android:key="pref_auto_update"
+	        android:title="@string/pref_auto_update"
+	        android:defaultValue="true" />
+	    <Preference
+	        android:key="button_manual_update"
+	        android:title="@string/pref_manual_update"/>
+    </PreferenceCategory>
+    
+</PreferenceScreen>

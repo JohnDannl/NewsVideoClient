@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:title="@string/setting_player"   
+        android:summary="@string/setting_custom_summ"           
+        android:icon="@android:drawable/ic_media_play">
+        <extra android:name="setting" android:value="player" />
+    </header> -->
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:title="@string/setting_player"              
+        android:icon="@android:drawable/ic_media_play">
+        <extra android:name="setting" android:value="player" />
+    </header>
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:title="@string/setting_category"              
+        android:icon="@android:drawable/ic_menu_add">
+       <!--  android:summary="@string/setting_custom_summ"  -->
+        <extra android:name="setting" android:value="category" />
+    </header>
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="@string/setting_update" >
+        <!-- key/value pairs can be included as arguments for the fragment. -->
+        <extra android:name="setting" android:value="update" />
+    </header>
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"               
+        android:icon="@android:drawable/ic_menu_delete" 
+        android:title="@string/setting_cache">
+        <extra android:name="setting" android:value="cache" />
+    </header>
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="@string/setting_disclaimer" >
+        <!-- key/value pairs can be included as arguments for the fragment. -->
+        <extra android:name="setting" android:value="disclaimer" />
+    </header>
+    <header 
+        android:fragment="ustc.newsvideo.setting.SettingActivity$SettingsFragment"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/setting_about">
+        <extra android:name="setting" android:value="about" />
+    </header>    
+</preference-headers>

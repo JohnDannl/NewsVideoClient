@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/setting_custom">   
+        <MultiSelectListPreference 
+            android:key="pref_category"
+            android:entries="@array/category_entry"
+            android:entryValues="@array/category_value"
+            android:defaultValue="@array/category_value"
+            android:dialogTitle="@string/setting_category_dialog"
+            android:title="@string/setting_category_title"
+            android:summary="@string/pref_category_enum_summ"/>             
+    </PreferenceCategory>
+
+</PreferenceScreen>

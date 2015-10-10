@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tansparent">#00000000</color>
+    <color name="dark_tangerine">#ffb22300</color>
+    <color name="light_tangerine">#68b22300</color>
+    <color name="list_selected_background">#66b20000</color>
+    <color name="list_normal_background">#66000000</color>
+    <color name="white">#ffffff</color>
+    <drawable name="actionbar_background">#ff000000</drawable>
+    <drawable name="list_selector_normal">#33333333</drawable>
+    <drawable name="list_selector_pressed">#33b20000</drawable>
+    <drawable name="list_selector_selected">#66b20000</drawable>
+    <drawable name="related_button_normal">#33333333</drawable>
+    <drawable name="related_selector_normal">#00000000</drawable>
+</resources>

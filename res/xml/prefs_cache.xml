@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/setting_custom">        
+	    <CheckBoxPreference
+	        android:key="pref_cache_location"
+	        android:title="@string/pref_cache_location"
+	        android:summary="@string/pref_cache_location_summ"
+	        android:defaultValue="true" />
+    </PreferenceCategory>
+    <Preference
+	        android:key="button_clear_cache"
+	        android:title="@string/pref_clear_cache"/>
+
+</PreferenceScreen>
